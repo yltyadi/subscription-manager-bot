@@ -1,3 +1,3 @@
-import os
-# TOKEN = '5341040500:AAFWFkb6w2kQ_tJ7cszMg4M802fPLpf6dfQ'  # BotFather token
-os.environ['TOKEN'] = '5341040500:AAFWFkb6w2kQ_tJ7cszMg4M802fPLpf6dfQ'
+# import os
+TOKEN = '5341040500:AAFWFkb6w2kQ_tJ7cszMg4M802fPLpf6dfQ'  # BotFather token
+# os.environ['TOKEN'] = '5341040500:AAFWFkb6w2kQ_tJ7cszMg4M802fPLpf6dfQ'
