@@ -1,10 +1,11 @@
+from email import message
 from aiogram import Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from datetime import datetime
 
 
 async def start(message: types.Message):
-    await message.reply(f"Welcome, {message.from_user.first_name}! This is Subscription Manager Bot. How can I help you?")
+    await message.reply(f"Welcome, {message.from_user.first_name}! This is your personal Subscription Manager Bot. How can I help you?")
 
 
 async def help(message: types.Message):

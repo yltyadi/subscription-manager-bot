@@ -6,10 +6,9 @@ from aiogram.types import BotCommand
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from handlers.add_subs import register_handler_add
-from handlers.info_subs import register_handler_info
+from handlers.info_subs import register_handler_info_statistics
 from handlers.basic_subs import register_basic_handlers
 from handlers.remove_subs import register_handler_remove
-from handlers.statistics import register_handler_statistics
 
 logger = logging.getLogger(__name__)
 
@@ -44,9 +43,8 @@ async def main():
     # custom handler registration /add_sub
     register_basic_handlers(dp)
     register_handler_add(dp)
-    register_handler_info(dp)
+    register_handler_info_statistics(dp)
     register_handler_remove(dp)
-    register_handler_statistics(dp)
 
     # installing commands
     await set_commands(bot)

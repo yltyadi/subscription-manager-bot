@@ -17,8 +17,10 @@ class Database:
             self.cursor.execute(
                 "INSERT INTO `subscriptions` (`user_id`, `subs_info`) VALUES (?, ?)", (user_id, subs_info))
 
-    def remove_subs(self, user_id, subs_info):
-        pass
+    def remove_subs(self, user_id, sub_id):
+        with self.connection:
+            self.cursor.execute(
+                "DELETE FROM `subscriptions` WHERE `id` = ?", (sub_id,))
 
     def user_exists(self, user_id):
         with self.connection:

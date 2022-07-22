@@ -1,1 +1,1 @@
-# Subscription Manager Bot for Telegram by @yltyadi
+# Personal Subscription Manager Bot for Telegram by @yltyadi
